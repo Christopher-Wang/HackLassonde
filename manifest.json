@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "SanScript",
+  "version": "0.1.0",
+  "description": "Change all things into Comic Sans",
+  "icons": {                   
+    "32": "yeet_small_32.png",
+    "64": "yeet_small_64.png",
+    "128": "yeet_small_128.png"
+  }, 
+  "content_scripts": [{
+  	"run_at": "document_start",
+    "css": ["styles.css"],
+    "matches": ["<all_urls>"]
+  }]
+ 
+}
